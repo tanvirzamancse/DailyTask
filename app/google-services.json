@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1005950842144",
+    "firebase_url": "https://dailytaskfyp-default-rtdb.firebaseio.com",
+    "project_id": "dailytaskfyp",
+    "storage_bucket": "dailytaskfyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005950842144:android:3fbe607c604945988b5345",
+        "android_client_info": {
+          "package_name": "com.codescafe.dailytask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005950842144-nr8j16gle9h8a8b7pi7av5ng2edqo9i0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPIz10LY6PFLtE52Q4SfzolYizTZdV3Fw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005950842144-nr8j16gle9h8a8b7pi7av5ng2edqo9i0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

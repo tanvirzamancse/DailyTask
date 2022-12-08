@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Util.TaskView"
+    android:background="@color/grey_300">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layouts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/etTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_25dp"
+                    android:layout_marginTop="@dimen/space50"
+                    android:layout_marginEnd="@dimen/margin_25dp"
+                    android:layout_marginBottom="@dimen/margin_25dp"
+                    android:background="@null"
+                    android:fontFamily="@font/font_medium"
+                    android:text="Title"
+                    android:textColor="@color/black"
+                    android:textSize="45dp" />
+
+                <LinearLayout
+                    android:id="@+id/dateAndSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="@dimen/margin_25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_medium"
+                        android:text="Date"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/dateSet"
+                        android:layout_width="200dp"
+                        android:layout_height="45dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_medium"
+                        android:text="Subject"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/subject"
+                        android:layout_width="200dp"
+                        android:layout_height="45dp" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_below="@id/dateAndSub"
+                    android:layout_marginStart="@dimen/margin_25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/margin_25dp"
+                    android:layout_marginBottom="@dimen/margin_25dp"
+                    app:cardBackgroundColor="#CBBBAA"
+                    app:cardCornerRadius="30dp">
+
+                    <TextView
+                        android:id="@+id/etStory"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:background="@null"
+                        android:layout_margin="@dimen/padding_10"
+                        android:gravity="center"
+                        android:hint="" />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_below="@id/layouts"
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/splash"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            />
+
+        <RelativeLayout
+            android:layout_below="@id/img"
+            android:id="@+id/relativeLayout10"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/message_bg"
+            android:visibility="visible"
+            >
+
+            <ImageView
+                android:id="@+id/pausePlay"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_baseline_play_circle_filled_24"
+                app:tint="@color/white" />
+
+            <SeekBar
+                android:id="@+id/progressShow"
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@id/pausePlay" />
+
+            <TextView
+                android:id="@+id/timeDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/progressShow"
+                android:gravity="end"
+                android:text="0.00"
+                android:visibility="visible"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
